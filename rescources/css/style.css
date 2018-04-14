@@ -15,7 +15,7 @@ html{
   font-size: 16px;
 }
 
-/* Header */
+/* Header Mobile*/
 header {
   min-height: 64px;
   background-color: #fff;
@@ -34,4 +34,76 @@ header .mobile-container img {
 header .mobile-container {
   display: flex;
   justify-content: space-around;
+}
+
+/* Header Desktop */
+header .desktop-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+header .desktop-header .left-content {
+  margin: auto;
+}
+
+header .desktop-header nav {
+  display: block;
+  padding-right: .5em;
+}
+
+header nav a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+header nav a:hover {
+  color: #3D3D3B;
+  font-size: 1.1em;
+  transition-duration: .2s;
+}
+
+header nav li {
+  display: inline-block;
+  padding: 1.3em 1.2em 0 0;
+}
+
+header .desktop-container .left-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 1.5rem;
+  padding-top: 0.8rem;
+}
+
+header .desktop-container img {
+  width: 2em;
+}
+
+header .desktop-container .left-content span {
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+header .desktop-container .left-content .highlight {
+  font-weight: 400;
+  color: #85857F;
+}
+
+header .desktop-container .right-content {
+  padding: 0 .7rem 0 0;
+}
+
+/* Responsive Tags */
+@media only screen and (max-width: 1279px) {
+  .desktop-header {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .mobile-header {
+    display: none;
+  }
 }
