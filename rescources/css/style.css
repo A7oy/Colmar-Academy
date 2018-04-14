@@ -15,6 +15,10 @@ html{
   font-size: 16px;
 }
 
+img {
+  overflow: hidden;
+}
+
 /* Header Mobile*/
 header {
   min-height: 64px;
@@ -241,6 +245,102 @@ header .desktop-container .right-content {
   background-color: #fff;
 }
 
+.desktop-newsletter .desktop-container {
+  display: inline-flex;
+}
+
+.desktop-newsletter .desktop-container .left-newsletter-container{
+  width: 60%;
+  padding: 2rem 1.5rem;
+  text-align: left;
+  line-height: 1.5;
+}
+
+.desktop-newsletter .desktop-container .left-newsletter-container img {
+  width: 100%;
+  padding: 0 0 2rem 0;
+}
+
+.desktop-newsletter .left-newsletter-container h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #454545;
+}
+
+.desktop-newsletter p {
+  font-size: 1rem;
+  color: #454545;
+}
+
+.desktop-newsletter .left-newsletter-container #news-brand {
+  padding: 2rem 0;
+  font-weight: bold;
+}
+
+.desktop-newsletter .right-newsletter-container {
+  width: 40%;
+  padding: 1rem 0 0 0;
+  border-left: 1px #B5B5B5 solid;
+}
+
+.desktop-newsletter .news-box-image {
+  width: 35%;
+}
+
+.desktop-newsletter .boxes img {
+  height: auto;
+  padding: 1rem;
+  width: 100%;
+}
+
+.desktop-newsletter .news-box-image {
+  width: 35%;
+}
+
+.desktop-newsletter .boxes h1 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #454545;
+}
+
+.desktop-newsletter .boxes p {
+  font-size: 1rem;
+  color: #454545;
+}
+
+.desktop-newsletter .boxes .news-box-information {
+  width: 65%;
+  margin: auto;
+  padding: 0 0 0 3rem;
+}
+
+.desktop-newsletter #guest {
+  background: #C2C2C2;
+}
+
+.desktop-newsletter #guest h3 {
+  line-height: 1.5;
+}
+
+.desktop-newsletter h3 {
+  color: #616161;
+}
+
+.desktop-newsletter #first {
+  border-bottom: 1px #B5B5B5 solid;
+}
+
+.desktop-newsletter #second {
+  border-top: 1px #B5B5B5 solid;
+}
+
+.desktop-newsletter .boxes {
+  padding: 0 0;
+}
+
+.desktop-newsletter a:hover {
+  color: #001C21;
+}
 
 
 
@@ -254,6 +354,32 @@ header .desktop-container .right-content {
 
 
 
+
+
+
+
+
+
+
+.desktop-newsletter .boxes h1,
+.desktop-newsletter .boxes h3,
+.desktop-newsletter .boxes #news-button {
+  display: block;
+  text-align: left;
+  padding: .5rem 0 .5rem 1rem;
+}
+
+.desktop-newsletter #news-button,
+.desktop-newsletter a {
+  font-size: 1rem;
+  text-decoration: none;
+  color: #009BFF;
+}
+
+
+.desktop-newsletter .boxes {
+  display: flex;
+}
 
 
 
