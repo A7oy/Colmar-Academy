@@ -97,6 +97,7 @@ header .desktop-container .right-content {
 /* Banner Mobile*/
 .mobile-banner .main-mobile-container {
   width: 100%;
+  padding: 0 0 3.5rem 0;
 }
 
 .mobile-banner .main-mobile-container .banner-image img {
@@ -122,6 +123,7 @@ header .desktop-container .right-content {
   font-size: 1.4rem;
   font-weight: bold;
   color: #40403D;
+  line-height: 1.5;
 }
 
 .mobile-banner .main-mobile-container .banner-content #button {
@@ -147,6 +149,7 @@ header .desktop-container .right-content {
 .desktop-banner .banner-image-desktop img {
   width: 100%;
   padding: 2rem 1.5rem;
+  overflow: hidden;
 }
 
 .desktop-banner h1 {
@@ -164,6 +167,7 @@ header .desktop-container .right-content {
   font-size: 1.4rem;
   font-weight: bold;
   color: #40403E;
+  line-height: 1.5;
 }
 
 .desktop-banner #button-desktop {
@@ -182,6 +186,72 @@ header .desktop-container .right-content {
   transition-duration: .2s;
 }
 
+/* NewsLetter Mobile */
+.mobile-newsletter {
+  background-color: #fff;
+}
+
+.mobile-newsletter .mobile-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.mobile-newsletter .boxes {
+  width: 100%;
+  padding: 1rem 1rem;
+}
+
+.mobile-newsletter .boxes img {
+  width: 100%;
+  padding: 0 0 2rem 0;
+}
+
+.mobile-newsletter .boxes h1,
+.mobile-newsletter .boxes h3,
+.mobile-newsletter .boxes #news-button {
+  display: block;
+  text-align: left;
+  padding: .5rem 0 .5rem 1rem;
+}
+
+.mobile-newsletter h1 {
+  font-size: 1.7rem;
+  font-weight: bold;
+  padding: 0 0 0 0;
+  color: #454545;
+}
+
+.mobile-newsletter h3 {
+  font-size: 1.25rem;
+  padding: 0 0 0 0;
+  color: #6E6E6E;
+  line-height: 1.5;
+}
+
+.mobile-newsletter #news-button,
+.mobile-newsletter a {
+  font-size: 1.2rem;
+  text-decoration: none;
+  color: #009BFF;
+}
+
+/* Newsletter Desktop */
+.desktop-newsletter {
+  background-color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -193,14 +263,16 @@ header .desktop-container .right-content {
 /* Responsive Tags */
 @media only screen and (max-width: 1279px) {
   .desktop-header,
-  .desktop-banner {
+  .desktop-banner,
+  .desktop-newsletter {
     display: none;
   }
 }
 
 @media only screen and (min-width: 1280px) {
   .mobile-header,
-  .mobile-banner {
+  .mobile-banner,
+  .mobile-newsletter{
     display: none;
   }
 }
