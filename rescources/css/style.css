@@ -1,0 +1,37 @@
+
+/* Global */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  text-align: center;
+  background: #c9c9c9;
+}
+
+html{
+  font-size: 16px;
+}
+
+/* Header */
+header {
+  min-height: 64px;
+  background-color: #fff;
+  border: 1px red solid;
+  width: 100%;
+}
+
+header .mobile-container img {
+  width: 2em;
+  display: inline-block;
+  margin: auto;
+  align-self: center;
+  padding: .8em 0 0 0;
+}
+
+header .mobile-container {
+  display: flex;
+  justify-content: space-around;
+}
