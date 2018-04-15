@@ -246,12 +246,12 @@ header .desktop-container .right-content {
 }
 
 .desktop-newsletter .desktop-container {
-  display: inline-flex;
+  display: flex;
 }
 
 .desktop-newsletter .desktop-container .left-newsletter-container{
   width: 60%;
-  padding: 2rem 1.5rem;
+  padding: 2rem 1.5rem 0 1.5rem;
   text-align: left;
   line-height: 1.5;
 }
@@ -378,7 +378,6 @@ header .desktop-container .right-content {
   display: inline-block;
   text-align: left;
   padding-bottom: 2rem;
-  border-bottom: 1px #BABABA solid;
 }
 
 .mobile-gallery .gallery-container a {
@@ -404,42 +403,197 @@ header .desktop-container .right-content {
 
 /* Desktop Learning Gallery */
 
+.desktop-gallery h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #383838;
+  padding: 2rem 0;
+}
 
+.desktop-gallery .gallery-boxes {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 0 4.5rem 2rem 4.5rem;
+}
 
+.desktop-gallery .gallery-boxes .g-boxes {
+  background-color: #fff;
+  margin: 0 1.10rem 1rem 1.10rem;
+  line-height: 1.3;
+  text-align: left;
+}
 
+.desktop-gallery .gallery-boxes .g-boxes img {
+  height: auto;
+  width: auto;
+}
 
+.desktop-gallery .gallery-boxes .g-boxes h3 {
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #616161;
+    padding: .9rem 0 0 1rem;
+}
 
+.desktop-gallery .gallery-boxes .g-boxes p {
+  color: #ADADAD;
+  padding: .9rem 0 0 1rem;
+}
 
+.desktop-gallery .gallery-boxes .g-boxes #bottom-text {
+  padding-bottom: 2rem;
+}
 
+.desktop-gallery .gallery-boxes .g-boxes a {
+  text-decoration: none;
+  color: #ADADAD;
+}
 
+.desktop-gallery .gallery-boxes .g-boxes a:hover {
+  color: #616161;
+  transition-duration: .2s;
+}
 
+/* Mobile Exhibit */
+.mobile-exhibit {
+  background-color: #fff;
+  border-top: 1px #CCCCCC solid;
+}
 
+.mobile-exhibit h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  padding: 2rem 0 1rem 0;
+  color: #383838;
+}
 
+/* Desktop Exhibit */
+.desktop-exhibit {
+  background-color: #fff;
+}
 
+.desktop-exhibit .content-container {
+  display: flex;
+  justify-content: center;
+}
 
+.desktop-exhibit .left-exhibit-content {
+  width: 60%;
+}
 
+.desktop-exhibit h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  padding: 2rem 0 2rem 0;
+  color: #383838;
+}
 
+.desktop-exhibit .video-container video {
+  width: 100%;
+  padding: 0 1.5rem;
+}
 
+.desktop-exhibit .text-content {
+  text-align: left;
+  padding: 1.5rem 0 0 1.5rem;
+  line-height: 1.4;
+}
 
+.desktop-exhibit .text-content h3 {
+  padding-bottom: 0.5rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #383838;
+}
 
+.desktop-exhibit .text-content p {
+  padding-bottom: 2rem;
+  color: #787878;
+}
 
+.desktop-exhibit .right-exhibit-content {
+  width: 40%;
+  display: inline-block;
+}
 
+.desktop-exhibit .e-box-image {
+  width: 35%;
+}
 
+.desktop-exhibit .exhibit-boxes img {
+  height: auto;
+  width: 100%;
+  padding: 1rem;
+}
 
+.desktop-exhibit .exhibit-boxes {
+  display: flex;
+  text-align: left;
+}
 
+.desktop-exhibit .e-box-content {
+  width: 65%;
+  padding: 6rem 0 0 0;
+  line-height: 1.5
+}
 
+.desktop-exhibit .e-box-content h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #454545;
+}
 
+.desktop-exhibit .e-box-content p {
+  font-size: 1rem;
+  color: #454545;
+}
 
+/* Mobile Footer */
+.mobile-footer {
+  background-color: #fff;
+  padding: 1.5rem 0 0 0;
+}
 
+.mobile-footer p {
+  color: #424242;
+  padding: 1rem 0;
+}
 
+/* Desktop Footer */
+.desktop-footer {
+  background-color: #fff;
+  border-top: 1px #C4C4C4 solid;
+  padding: 2rem 0;
+  display: flex;
+  justify-content: space-between;
+}
 
+.desktop-footer p {
+  text-align: left;
+  padding-left: 1.5rem;
+  color: #424242;
+}
 
+.desktop-footer .r-text {
+  display: inline-block;
+  justify-content: flex-end;
+}
+
+.desktop-footer .r-text a{
+  text-decoration: none;
+  color: #424242;
+  padding: .3rem;
+}
 
 /* Responsive Tags */
 @media only screen and (max-width: 1279px) {
   .desktop-header,
   .desktop-banner,
-  .desktop-newsletter {
+  .desktop-newsletter,
+  .desktop-gallery,
+  .desktop-exhibit,
+  .desktop-footer {
     display: none;
   }
 }
@@ -448,7 +602,9 @@ header .desktop-container .right-content {
   .mobile-header,
   .mobile-banner,
   .mobile-newsletter,
-  .mobile-gallery {
+  .mobile-gallery,
+  .mobile-exhibit,
+  .mobile-footer {
     display: none;
   }
 }
