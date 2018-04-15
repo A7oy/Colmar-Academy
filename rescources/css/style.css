@@ -342,25 +342,6 @@ header .desktop-container .right-content {
   color: #001C21;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .desktop-newsletter .boxes h1,
 .desktop-newsletter .boxes h3,
 .desktop-newsletter .boxes #news-button {
@@ -376,10 +357,78 @@ header .desktop-container .right-content {
   color: #009BFF;
 }
 
-
 .desktop-newsletter .boxes {
   display: flex;
 }
+
+/* Mobile Learning Gallery */
+.mobile-gallery {
+  background-color: #fff;
+  border-top: 1px #BABABA solid;
+}
+
+.mobile-gallery h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  padding: 2rem 0 1rem 0;
+  color: #383838;
+}
+
+.mobile-gallery .gallery-container {
+  display: inline-block;
+  text-align: left;
+  padding-bottom: 2rem;
+  border-bottom: 1px #BABABA solid;
+}
+
+.mobile-gallery .gallery-container a {
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #4C4C4C;
+  padding: 2rem 0;
+}
+
+.mobile-gallery .gallery-container .item {
+  padding: .3rem 0;
+}
+
+.mobile-gallery .gallery-container h3 {
+  background-color: #D9D9D9;
+  padding: 1rem 4rem 1.5rem 1rem;
+}
+
+.mobile-gallery .gallery-container a:hover {
+  color: #242424;
+}
+
+/* Desktop Learning Gallery */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -398,7 +447,8 @@ header .desktop-container .right-content {
 @media only screen and (min-width: 1280px) {
   .mobile-header,
   .mobile-banner,
-  .mobile-newsletter{
+  .mobile-newsletter,
+  .mobile-gallery {
     display: none;
   }
 }
